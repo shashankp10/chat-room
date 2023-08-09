@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Room</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="background-figure">
+	    <img src="/image/b.jpg" alt="Background Image">
+	</div>
+	<div id="username-page">
+	<h1>Connect with your friends!!</h1>
+	    <div class="username-page-container">
+	        <form id="usernameForm" name="usernameForm">
+	            <div class="form-group">
+	                <div class="input-group"> <!-- Add an input-group container -->
+	                    <input type="text" id="name" placeholder="Enter your name..." autocomplete="off" class="form-control" />
+	                    <button type="submit" class="accent username-submit">Join</button>
+	                </div>
+            	</div>
+	        </form>
+	    </div>
+	</div>
+	<div id="chat-page" class="hidden">
+	    <div class="chat-container">
+	        <div class="chat-header">
+	            <h2>Welcome to the chat room</h2>
+	        </div>
+	        <div class="connecting">
+	            Connecting...
+	        </div>
+	        <ul id="messageArea">
+	
+	        </ul>
+	        <form id="messageForm" name="messageForm">
+	            <div class="form-group">
+	                <div class="input-group clearfix">
+	                    <input type="text" id="message" placeholder="Type your message..." autocomplete="off" class="form-control"/>
+	                    <button type="submit" class="primary">
+	                    	<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  								<path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+							</svg>
+						</button>
+	                </div>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+	<!-- <footer>
+		<p id="copyright">Copyright © 2023 Shashank </p>
+	</footer> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
